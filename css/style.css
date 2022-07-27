@@ -164,5 +164,13 @@ footer {
     left: 0;
     bottom: 0;
     background-color: #282828;
+}
 
+footer section {
+    width: calc(100% / 3);
+}
+
+.footer-left img {
+    height: 30px;
+    width: 30px;
 }
