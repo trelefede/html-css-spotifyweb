@@ -1,0 +1,27 @@
+/*** GENERICS ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.2rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+/*** UTILITIES ***/
+
+.flex {
+    display: flex;
+}
+
+
+/*** CONTENT ***/
