@@ -81,6 +81,7 @@ aside {
     background-color: black;
     width: 35px;
     padding: 7px;
+    padding-bottom: 80px;
     height: 100vh;
 }
 
@@ -125,7 +126,7 @@ aside img {
 
 /* container music */
 .container-music {
-    padding: 0 20px;
+    padding: 0 20px 30px;
 }
 
 .container-album {
@@ -156,6 +157,12 @@ aside img {
 
 /* footer */
 footer {
+    position: fixed;
+    align-items: center;
+    width: 100%;
     height: 70px;
+    left: 0;
+    bottom: 0;
     background-color: #282828;
+
 }
