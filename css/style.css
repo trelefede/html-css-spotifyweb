@@ -10,12 +10,12 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     line-height: 1.2rem;
+    width: 100%;
 }
 
 img {
     width: 100%;
 }
-
 
 /*** UTILITIES ***/
 
@@ -23,5 +23,50 @@ img {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.color-grey {
+    color: grey;
+}
 
 /*** CONTENT ***/
+
+/* MAIN */
+.container-web-app {
+    height: 100vh;
+
+}
+
+
+/* aside */
+aside {
+    background-color: black;
+    width: 35px;
+    padding: 7px;
+    height: 100vh;
+}
+
+aside img {
+    padding-bottom: 7px;
+}
+
+.aside-down img {
+    padding-bottom: 0;
+    margin-top: 25px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.aside-down i {
+    color: grey;
+    font-size: 0.7rem;
+    align-self: center;
+    border-radius: 50%;
+    border: 0.5px solid grey;
+}
