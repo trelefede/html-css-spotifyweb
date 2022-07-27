@@ -18,7 +18,15 @@
 <body>
     <main>
         <div class="container-web-app">
+
+            <!-- HEADER -->
+            <header class="flex flex-end">
+                <button>EFFETTUA L'UPGRADE</button>
+            </header>
+
             <div class="container-page flex">
+
+                <!-- ASIDE -->
                 <aside class="flex column space-between">
                     <div class="aside-up">
                         <img src="images/logo-small.svg" alt="Site Logo">
@@ -32,11 +40,10 @@
                     </div>
                 </aside>
 
-                <header class="flex flex-end">
-                    <button>EFFETTUA L'UPGRADE</button>
-                </header>
+                <!-- CONTAINER WRAP PAGE -->
+                <div class="container-wrap-page">
 
-                <div class="container-music">
+                    <!-- nav -->
                     <nav>
                         <ul class="flex wrap">
                             <li>IN EVIDENZA</li>
@@ -47,19 +54,53 @@
                             <li>SCOPRI</li>
                         </ul>
                     </nav>
-                    <!-- recently played -->
-                    <section>
-                        <h2>Recently played</h2>
-                        <div class="container-recently">
-                            <div class="album">
-                                img
+
+                    <!-- container music -->
+                    <div class="container-music">
+
+                        <!-- recently played -->
+                        <section>
+                            <h2>Recently played</h2>
+                            <div class="container-album flex space-between wrap">
+
+                                <!-- album cards -->
+                                <div class="album flex column space-around">
+                                    <img src="images/metal_lifting.jpg" alt="heavy metal cover">
+                                    <h4>Heavy Metal</h4>
+                                    <p>Subtitle</p>
+                                </div>
+                                <div class="album flex column space-around">
+                                    <img src="images/stranger.jpeg" alt="stranger things cover">
+                                    <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                    <p>Kile Dixton e Michael Ston</p>
+                                </div>
+                                <div class="album flex column space-around">
+                                    <img src="images/aquietplace.jpeg" alt="quiet place cover">
+                                    <h4>A Quite Place</h4>
+                                    <p>Subtitle</p>
+                                </div>
+                                <div class="album flex column space-around">
+                                    <img src="images/split.jpeg" alt="split cover">
+                                    <h4>Split</h4>
+                                    <p>Subtitle</p>
+                                </div>
+                                <div class="album flex column space-around">
+                                    <img src="images/cure.jpeg" alt="Cure for Wellness cover">
+                                    <h4>A Cure for Wellness</h4>
+                                    <p>Subtitle</p>
+                                </div>
+                                <div class="album flex column space-around">
+                                    <img src="images/sinister.jpeg" alt="sinister cover">
+                                    <h4>Sinister</h4>
+                                    <p>Subtitle</p>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <!-- created for you -->
-                    <section></section>
-                    <!-- popular artists -->
-                    <section></section>
+                        </section>
+                        <!-- created for you -->
+                        <section></section>
+                        <!-- popular artists -->
+                        <section></section>
+                    </div>
                 </div>
             </div>
 
