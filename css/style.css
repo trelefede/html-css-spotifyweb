@@ -125,7 +125,11 @@ aside img {
 
 /* container music */
 .container-music {
-    padding: 0 20px 20px;
+    padding: 0 20px;
+}
+
+.container-album {
+    margin: 30px 0;
 }
 
 /* album cards */
@@ -136,18 +140,18 @@ aside img {
     margin-bottom: 10px;
 }
 
-h2 {
-    margin-bottom: 30px;
-}
-
 .album h4 {
     margin: 15px 0;
 }
 
-.album p {
+.container-music p {
     font-weight: 400;
     color: #76787d;
     font-size: 1rem;
+}
+
+.container-music section>p {
+    margin-top: 20px;
 }
 
 /* footer */
