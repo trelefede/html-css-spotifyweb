@@ -389,3 +389,42 @@ footer p {
         margin: 0 auto;
     }
 }
+
+/* L MEDIA QUERY >992px */
+@media screen and (min-width: 992px) {
+
+    /* nav */
+    .container-wrap-page ul {
+        font-size: 0.8rem;
+    }
+
+    /* album cards */
+    .album {
+        width: calc(100% / 6 - 10px);
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 15px;
+    }
+
+    .album p {
+        font-size: 0.8rem;
+    }
+
+    .album h4 {
+        margin-bottom: 5px;
+    }
+
+
+
+
+    /* footer */
+    #time-bar {
+        width: 60%;
+    }
+
+    #music-controls,
+    .footer-left,
+    .footer-right {
+        width: 30%;
+    }
+}
