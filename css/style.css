@@ -49,6 +49,10 @@ img {
     color: grey;
 }
 
+.hidden {
+    display: none;
+}
+
 /*** CONTENT ***/
 
 /* MAIN */
@@ -98,10 +102,11 @@ aside img {
 
 .aside-down i {
     color: grey;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     align-self: center;
     border-radius: 50%;
-    border: 0.5px solid grey;
+    border: 1px solid grey;
+    padding: 0 2px;
 }
 
 /* container wrap page */
@@ -229,4 +234,91 @@ footer p {
     width: 70%;
     height: 3px;
     border-radius: 3px;
+}
+
+
+/* S MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+
+    /* aside */
+    aside {
+        width: 200px;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 25px;
+    }
+
+    aside .hidden {
+        display: inline-block;
+    }
+
+    aside div {
+        align-items: center;
+    }
+
+    .logo img {
+        width: 35px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    aside p {
+        font-size: 0.7rem;
+        color: #6e6e6e;
+    }
+
+    aside img {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    aside h4 {
+        font-size: 0.75rem;
+    }
+
+    .aside-playlist {
+        margin-top: 10px;
+        line-height: 30px;
+    }
+
+    #new-playlist {
+        font-size: 1rem;
+        color: #000;
+        background-color: #6e6e6e;
+        padding: 6px;
+        margin-right: 5px;
+    }
+
+    .aside-down {
+        align-items: normal;
+    }
+
+    .aside-down img {
+        margin: 0 5px 0 0;
+    }
+
+    aside hr {
+        margin-bottom: 11px;
+    }
+
+    .aside-down i {
+        margin-right: 5px;
+    }
+
+    /* wrap page */
+    .container-wrap-page {
+        margin-left: 200px;
+    }
+
+
+
+
+
+
+
+
 }
