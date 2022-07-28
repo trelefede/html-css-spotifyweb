@@ -58,12 +58,12 @@ img {
 
 /* header */
 header {
-    width: 100vw;
-    height: 65px;
+    width: 100%;
     background-color: black;
     opacity: 0.5;
     position: fixed;
     align-items: center;
+    padding: 10px 0;
 }
 
 header button {
@@ -79,10 +79,10 @@ header button {
 aside {
     position: fixed;
     background-color: black;
-    width: 35px;
     padding: 7px;
     padding-bottom: 80px;
     height: 100vh;
+    width: 35px;
 }
 
 aside img {
@@ -109,7 +109,7 @@ aside img {
     margin-left: 35px;
     background-color: #141922;
     flex-grow: 1;
-    padding-top: 65px;
+    padding-top: 52px;
 }
 
 .container-wrap-page ul {
@@ -159,18 +159,42 @@ aside img {
 footer {
     position: fixed;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     left: 0;
     bottom: 0;
     background-color: #282828;
+    padding: 0 10px;
+    line-height: 12px;
 }
 
 footer section {
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 20px);
+    height: 40px;
+    justify-content: space-between;
 }
 
 .footer-left img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-left i {
+    font-size: 0.8rem;
+    color: white;
+    padding: 2px 0;
+}
+
+footer div,
+img {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+footer p {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #76787d;
 }
