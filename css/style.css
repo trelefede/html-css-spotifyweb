@@ -93,6 +93,10 @@ aside img {
     padding-bottom: 7px;
 }
 
+.aside-down {
+    align-items: center;
+}
+
 .aside-down img {
     padding-bottom: 0;
     margin-top: 25px;
@@ -237,7 +241,7 @@ footer p {
 }
 
 
-/* S MEDIA QUERY */
+/* S MEDIA QUERY >576px */
 
 @media screen and (min-width: 576px) {
 
@@ -314,11 +318,74 @@ footer p {
         margin-left: 200px;
     }
 
+    /* footer */
+    #song-info {
+        flex-grow: 0;
+        margin-right: 20px;
+    }
 
+    #heart-folder {
+        align-items: flex-start;
+    }
 
+}
 
+/* M MEDIA QUERY >768px */
+@media screen and (min-width: 768px) {
 
+    .container-album {
+        justify-content: flex-start;
+    }
 
+    /* container wrap page */
+    nav {
+        padding: 0 10px;
+    }
 
+    /* album cards */
+    .album {
+        width: calc(100% / 4 - 10px);
+        margin-right: 10px;
+    }
 
+    /* footer */
+    #heart-folder {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #song-info {
+        margin-right: 25px;
+    }
+
+    .footer-left i {
+        margin-right: 15px;
+    }
+
+    .footer-left div p {
+        display: none;
+    }
+
+    .footer-left .hidden {
+        display: inline-block !important;
+    }
+
+    #song-info div {
+        width: 60px;
+    }
+
+    .footer-center {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #music-controls {
+        width: 60%;
+        margin: 0 auto 10px;
+    }
+
+    #time-bar {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

@@ -65,12 +65,12 @@
                     <div class="aside-down flex column">
                         <div class="flex">
                             <i class="fa-solid fa-arrow-down"></i>
-                            <p>Installa app</p>
+                            <p class="hidden">Installa app</p>
                         </div>
-                        <hr>
+                        <hr class="hidden">
                         <div class="flex">
                             <img src="images/profile.svg" alt="Go to User profile">
-                            <h4>John Doe</h4>
+                            <h4 class="hidden">John Doe</h4>
                         </div>
                     </div>
                 </aside>
@@ -174,15 +174,16 @@
 
             <footer class="container-footer flex space-between">
                 <section class="footer-left flex">
-                    <div class="flex">
+                    <div id="song-info" class="flex">
                         <img src="images/sinister.jpeg" alt="sinister cover">
                         <div>
                             <h6>Sinister</h6>
                             <p>Brano</p>
                             <p>Nome</p>
+                            <p class="hidden">Brano Nome</p>
                         </div>
                     </div>
-                    <div class="flex column">
+                    <div id="heart-folder" class="flex column">
                         <i class="fa solid fa-heart"></i>
                         <i class="fa-solid fa-folder"></i>
                     </div>
@@ -195,7 +196,7 @@
                         <i class="fa-solid fa-forward-step"></i>
                         <i class="fa-solid fa-rotate-right"></i>
                     </div>
-                    <div class="flex space-between">
+                    <div id="time-bar" class="flex space-between">
                         <p>0:25</p>
                         <div class="bar">
                             <div class="progress-bar"></div>
