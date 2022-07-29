@@ -175,6 +175,41 @@ li:hover {
     margin-bottom: 10px;
 }
 
+.album img {
+    opacity: 1.0;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.album .container-cover {
+    position: relative;
+}
+
+.album .middle {
+    opacity: 0;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.album:hover img {
+    opacity: 0.3;
+}
+
+.album:hover .middle {
+    opacity: 1;
+}
+
+.play {
+    font-size: 3rem;
+}
+
+
+
 .album h4 {
     margin: 15px 0;
 }
