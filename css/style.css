@@ -79,6 +79,12 @@ header button {
     padding: 7px 24px;
 }
 
+header button:hover {
+    transform: scale(1.05);
+}
+
+
+
 /* aside */
 aside {
     position: fixed;
@@ -91,6 +97,10 @@ aside {
 
 aside img {
     padding-bottom: 7px;
+}
+
+#contrast {
+    filter: contrast(0);
 }
 
 .aside-down {
@@ -273,11 +283,16 @@ footer p {
     aside p {
         font-size: 0.7rem;
         color: #6e6e6e;
+        transition: color;
     }
 
     aside img {
         width: 20px;
         margin-right: 5px;
+    }
+
+    aside p:hover {
+        color: white;
     }
 
     aside h4 {
