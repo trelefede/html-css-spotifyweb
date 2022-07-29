@@ -99,8 +99,9 @@ aside img {
     padding-bottom: 7px;
 }
 
-#contrast {
+.nav-aside img {
     filter: contrast(0);
+    transition: filter;
 }
 
 .aside-down {
@@ -121,6 +122,13 @@ aside img {
     border-radius: 50%;
     border: 1px solid grey;
     padding: 0 2px;
+    transition: color;
+}
+
+.nav-aside img:hover,
+.aside-down i:hover {
+    color: white;
+    filter: none;
 }
 
 /* container wrap page */
@@ -226,6 +234,12 @@ footer p {
     font-size: 0.6rem;
     font-weight: 400;
     color: #76787d;
+    transition: text, color;
+}
+
+footer p:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .bar {
@@ -291,9 +305,15 @@ footer p {
         margin-right: 5px;
     }
 
-    aside p:hover {
+    aside p:hover,
+    .aside-playlist div:hover i {
         color: white;
     }
+
+    .nav-aside div:hover img {
+        filter: none;
+    }
+
 
     aside h4 {
         font-size: 0.75rem;
@@ -304,12 +324,13 @@ footer p {
         line-height: 30px;
     }
 
-    #new-playlist {
+    .new-playlist {
         font-size: 1rem;
         color: #000;
         background-color: #6e6e6e;
         padding: 6px;
         margin-right: 5px;
+        transition: color;
     }
 
     .aside-down {
