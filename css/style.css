@@ -149,6 +149,13 @@ aside img {
 
 .container-wrap-page li {
     margin: 0px 9px 30px;
+    transition: color;
+}
+
+li:hover {
+    color: white;
+    border-bottom: 1px solid #cbe9b0;
+    border-bottom-width: 40%;
 }
 
 /* container music */
@@ -205,6 +212,10 @@ footer section {
     margin-bottom: 10px;
 }
 
+#music-controls i:hover {
+    transform: scale(1.3);
+}
+
 .footer-left img {
     height: 40px;
     width: 40px;
@@ -213,8 +224,13 @@ footer section {
 
 .footer-left i {
     font-size: 0.8rem;
-    color: white;
+    color: #979797;
     padding: 2px 0;
+    transition: color;
+}
+
+.footer-left i:hover {
+    color: white;
 }
 
 .footer-right i {
@@ -255,6 +271,7 @@ footer p:hover {
     width: 30%;
     height: 3px;
     border-radius: 3px;
+    transition: color;
 }
 
 .progress-bar-volume {
@@ -262,8 +279,17 @@ footer p:hover {
     width: 70%;
     height: 3px;
     border-radius: 3px;
+    transition: background-color;
 }
 
+.bar:hover .progress-bar,
+.bar:hover .progress-bar-volume {
+    background-color: #c0f75c;
+}
+
+.footer-right i:hover {
+    transform: scale(1.3);
+}
 
 /* S MEDIA QUERY >576px */
 
